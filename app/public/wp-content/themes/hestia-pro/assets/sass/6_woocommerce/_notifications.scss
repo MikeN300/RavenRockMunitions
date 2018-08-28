@@ -1,0 +1,71 @@
+.woocommerce-info,
+.woocommerce-error,
+.woocommerce-message {
+  padding: 20px 15px 20px 50px !important;
+  border: none;
+  color: #fff;
+  background: #efefef;
+
+  &:before {
+    top: 19px;
+    color: $color-secondary;
+    font-family: "FontAwesome";
+  }
+
+  > a.button {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 5px 10px 0;
+    color: $color-secondary;
+
+    &:hover {
+      color: $color-secondary;
+      background: none;
+      box-shadow: none;
+      opacity: .75;
+    }
+  }
+}
+
+.woocommerce-info {
+  color: #fff;
+  background-color: $color-info;
+  &:before {
+    color: #fff;
+    content: "\f129";
+  }
+
+  a{
+    color: #fff;
+    &:hover {
+      opacity: .75;
+      color: #fff;
+    }
+  }
+}
+
+.woocommerce-error {
+  background-color: #fccbc7;
+  color: $color-secondary;
+
+  &:before {
+    content: "\f12a";
+  }
+}
+
+.woocommerce-message {
+  background-color: #e5ffe8;
+  color: $color-secondary;
+
+  a:not(.button) {
+    color: $color-secondary;
+
+    &:hover {
+      opacity: .75;
+    }
+  }
+
+  &:before {
+    content: "\f00c";
+  }
+}

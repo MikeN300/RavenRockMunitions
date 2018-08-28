@@ -1,0 +1,33 @@
+.hestia-blogs article {
+  &:nth-child(6n) .category a {
+    color: $color-success;
+  }
+  &:nth-child(6n+1) .category a {
+    color: $color-primary-hover;
+  }
+  &:nth-child(6n+2) .category a {
+    color: $color-info;
+  }
+  &:nth-child(6n+3) .category a {
+    color: $color-danger;
+  }
+  &:nth-child(6n+4) .category a {
+    color: $color-warning;
+  }
+  &:nth-child(6n+5) .category a {
+    color: $color-rose;
+  }
+  .card-image {
+    img {
+      transition: 1s ease-out;
+    }
+    a:hover {
+      opacity: 1;
+      img {
+        -webkit-transform: scale3d(1.1, 1.1, 1);
+        transform: scale3d(1.1, 1.1, 1);
+      }
+    }
+  }
+}
+

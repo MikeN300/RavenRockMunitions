@@ -1,0 +1,29 @@
+@media (max-width: 600px) {
+  body.admin-bar {
+    .navbar {
+      &.navbar-scroll-point{
+        top: 0;
+
+        &.header-with-topbar {
+          top: 0;
+        }
+      }
+
+      &.navbar-not-transparent {
+        margin-top: 0;
+      }
+    }
+
+    .navbar {
+      &.navbar-scroll-point {
+        &.navbar-fixed-top .navbar-collapse {
+          max-height: calc(100% - 70px);
+          margin-top: 70px;
+        }
+      }
+    }
+    &.woocommerce.single-product .product {
+      padding-top: 24px;
+    }
+  }
+}

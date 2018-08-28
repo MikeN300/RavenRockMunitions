@@ -1,0 +1,65 @@
+.subscribe-line {
+  padding: 65px 0;
+
+  .card {
+    margin-top: 30px;
+
+    .content .row {
+      margin: 0;
+    }
+
+    .input-group {
+      display: table;
+
+      .input-group-addon {
+        display: table-cell;
+        padding: 0 15px 0 0;
+        width: 1%;
+      }
+
+      .form-group {
+        display: table-cell;
+        padding-bottom: 0;
+      }
+    }
+
+    input[type=submit],
+    input[type=button],
+    .btn {
+      white-space: nowrap;
+    }
+  }
+
+  &.subscribe-line-image {
+    position: relative;
+    background-position: top center;
+    background-size: cover;
+
+    .title,
+    .hestia-title {
+      color: #fff;
+    }
+
+    &:after {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.66);
+      content: "";
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .card h5,
+  .sib_loader {
+    display: none !important;
+  }
+}

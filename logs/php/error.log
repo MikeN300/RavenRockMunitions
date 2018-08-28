@@ -1,0 +1,20 @@
+[21-Aug-2018 17:11:43 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_CLI\SynopsisValidator' not found in phar:///usr/local/bin/wp/php/WP_CLI/Dispatcher/Subcommand.php:254
+Stack trace:
+#0 phar:///usr/local/bin/wp/php/WP_CLI/Dispatcher/Subcommand.php(386): WP_CLI\Dispatcher\Subcommand->validate_args(Array, Array, Array)
+#1 phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(323): WP_CLI\Dispatcher\Subcommand->invoke(Array, Array, Array)
+#2 phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(330): WP_CLI\Runner->run_command(Array, Array)
+#3 phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(985): WP_CLI\Runner->_run_command()
+#4 phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php(23): WP_CLI\Runner->start()
+#5 phar:///usr/local/bin/wp/php/bootstrap.php(75): WP_CLI\Bootstrap\LaunchRunner->process(Object(WP_CLI\Bootstrap\BootstrapState))
+#6 phar:///usr/local/bin/wp/php/wp-cli.php(23): WP_CLI\bootstrap()
+#7 phar:///usr/local/bin/wp/php/boot-phar.php(8): include('phar:///usr/loc...')
+#8 /usr/local/bin/wp(4): include('phar:///usr/loc...')
+#9 {main}
+  thrown in phar:///usr/local/bin/wp/php/WP_CLI/Dispatcher/Subcommand.php on line 254
+[21-Aug-2018 17:26:51 UTC] PHP Warning:  copy(/app/public/wp-content/upgrade/jetpack.6.4.2-7CDaaN/jetpack/modules/sharedaddy/images/linkedin-nocount.png): failed to open stream: No such file or directory in /app/public/wp-admin/includes/class-wp-filesystem-direct.php on line 243
+[21-Aug-2018 17:26:51 UTC] PHP Warning:  copy(/app/public/wp-content/upgrade/jetpack.6.4.2-7CDaaN/jetpack/modules/sharedaddy/images/linkedin-nocount.png): failed to open stream: No such file or directory in /app/public/wp-admin/includes/class-wp-filesystem-direct.php on line 243
+[21-Aug-2018 17:26:56 UTC] PHP Warning:  copy(/app/public/wp-content/upgrade/storefront.2.3.3-4nl9if/storefront/assets/css/woocommerce/extensions/advanced-product-labels.css): failed to open stream: No such file or directory in /app/public/wp-admin/includes/class-wp-filesystem-direct.php on line 243
+[21-Aug-2018 17:26:57 UTC] PHP Warning:  copy(/app/public/wp-content/upgrade/storefront.2.3.3-4nl9if/storefront/assets/css/woocommerce/extensions/advanced-product-labels.css): failed to open stream: No such file or directory in /app/public/wp-admin/includes/class-wp-filesystem-direct.php on line 243
+[21-Aug-2018 20:38:22 UTC] PHP Parse error:  syntax error, unexpected '' );' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')' in /app/public/wp-content/themes/ravenrockmunitions/functions.php on line 4
+[21-Aug-2018 20:38:38 UTC] PHP Parse error:  syntax error, unexpected '' );' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')' in /app/public/wp-content/themes/ravenrockmunitions/functions.php on line 4
+[21-Aug-2018 21:07:15 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-content/themes/hestia/vendor/codeinwp/themeisle-sdk/class-themeisle-sdk-feedback-deactivate.php on line 552

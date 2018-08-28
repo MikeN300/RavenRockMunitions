@@ -1,0 +1,43 @@
+.aos-init {
+  &[data-aos] {
+    transition-duration: 1.25s;
+    -webkit-transition-duration: 1.25s;
+    -moz-transition-duration: 1.25s;
+    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    will-change: transform, opacity;
+  }
+
+  &[data-aos].hestia-table-two {
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+  }
+
+  &[data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity, transform
+  }
+
+  &[data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+  }
+
+  &[data-aos=fade-up] {
+    transform: translate3d(0, 35px, 0)
+  }
+
+  &[data-aos=fade-down] {
+    transform: translate3d(0, -35px, 0)
+  }
+
+  &[data-aos=fade-right] {
+    transform: translate3d(-35px, 0, 0)
+  }
+
+  &[data-aos=fade-left] {
+    transform: translate3d(35px, 0 ,0)
+  }
+}

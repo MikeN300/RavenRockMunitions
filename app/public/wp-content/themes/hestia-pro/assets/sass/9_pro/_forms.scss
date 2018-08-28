@@ -1,0 +1,88 @@
+// Ninja Forms compatibility
+.nf-form-cont {
+  input:not([type=button]),
+  select,
+  textarea {
+    @extend %forms-inputs-styling;
+  }
+
+  input:not([type=button]):focus,
+  select:focus,
+  textarea:focus {
+    @extend %forms-inputs-styling-on-focus;
+  }
+}
+
+.nf-error {
+  .ninja-forms-field {
+    border: none !important;
+  }
+}
+
+// Formidable Forms compatibility
+.frm_forms {
+  select {
+    @extend %forms-inputs-styling;
+  }
+
+  input[type=text],
+  input[type=password],
+  input[type=email],
+  input[type=number],
+  input[type=url],
+  input[type=tel],
+  input[type=search],
+  input:not([type=file]),
+  select,
+  textarea,
+  .frm_form_field:invalid {
+    &, &:focus {
+      border: none !important;
+      border-radius: 0;
+      box-shadow: none !important;
+      outline: none;
+    }
+  }
+}
+
+// Visual Form Builder compatibility
+.visual-form-builder {
+  input:not([type=submit]),
+  select,
+  textarea {
+    @extend %forms-inputs-styling;
+
+    &:focus {
+      border: none;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  fieldset {
+    background: none;
+    border: none;
+    border-radius: 0;
+  }
+
+  .vfb-legend {
+    border-bottom: none;
+    color: $color-secondary;
+  }
+}
+
+// Easy Forms for MailChimp compatibility
+.yikes-easy-mc-form {
+  input[type=text],
+  input[type=url],
+  input[type=email],
+  input[type=number],
+  select {
+    background-color: transparent !important;
+    border: none !important;
+
+    &:focus {
+      outline: none !important;
+    }
+  }
+}
